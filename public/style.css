@@ -180,6 +180,11 @@ p {
   height: 65% !important;
 }
 
+.img3 {
+  object-fit: cover !important;
+  height: 100% !important;
+}
+
 .placeBox .content {
   position: absolute;
   top: 0;
