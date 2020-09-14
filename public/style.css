@@ -44,6 +44,11 @@ p {
   color: rgba(255,255,255,.8);
 }
 
+.technology {
+  color: #fff;
+  font-size: 90px;
+}
+
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
   color: rgba(255,255,255,1);
@@ -62,7 +67,8 @@ p {
 .personImg {
   position: relative;
   width: 300px;
-  box-shadow: 2px 2px 10px grey;
+  box-shadow: 15px 5px 10px #000;
+  z-index: 100000;
 }
 
 .banner {
@@ -77,8 +83,7 @@ p {
 
 .banner:before,
 .sec2:before,
-.contact:before,
-.personImg:before {
+.contact:before {
   content: '';
   position: absolute;
   top: 0;
@@ -91,8 +96,7 @@ p {
 
 .banner:after,
 .sec2:after,
-.contact:after,
-.personImg:after {
+.contact:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -133,6 +137,10 @@ p {
   font-size: 1.3rem;
 }
 
+.aboutMe {
+  text-transform: none !important;
+}
+
 .sec1 {
   padding: 100px 0;
   background: #000;
@@ -149,8 +157,8 @@ p {
 
 .placeBox {
   position: relative;
-  max-width: 300px;
-  height: 400px;
+  max-width: 150px;
+  height: 200px;
   margin: 0 auto;
   background: #000;
   margin-top: 30px;
@@ -164,7 +172,12 @@ p {
 .placeBox .imgBx img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 90%;
+}
+
+.img2 {
+  object-fit: contain !important;
+  height: 65% !important;
 }
 
 .placeBox .content {
@@ -194,7 +207,7 @@ p {
   font-size: 16px;
   font-weight: 500;
 }
-
+/* ----------- section 2 ================ */
 .sec2 {
   position: relative;
   background: url('images/banner2bg.JPG');
@@ -221,7 +234,7 @@ p {
   margin-top: 20px;
 }
 
-.blog {
+.portfolio {
   position: relative;
   padding: 100px 0;
   background: #000;
@@ -374,7 +387,7 @@ footer {
   .headerText h2 {
     font-size: 2rem;
   }
-  .blog {
+  .portfolio {
     padding: 20px 0;
   }
   .blogpost .imgBx {
